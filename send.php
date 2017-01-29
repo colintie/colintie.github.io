@@ -14,6 +14,6 @@ $message = "Письмо отправлено из моей формы. <br />
 Телефон: ".htmlspeciacharts($phone);
 $headers = "from: projectgame.ru <clients@projectgame.org>\r\nContent-type: text/html; charset=UTF-8 \r\n";
 mail ($to, $subject, $message, $headers);
-header('Location:thanks.html');
+header('Location: thanks.html');
 exit();
 ?>
