@@ -50,8 +50,10 @@
 			<div class="row text-center">
 				<h1 class="wow fadeInUp" >Проект ИГРА</h1>
 				<h2 class="wow fadeInUp" data-wow-delay="0.5s">Екатеринбург</h2>
+				<a href="#types"><span></span></a>
 			</div>
 		</div>
+
 	</section>
 
 	<section id="types">
@@ -292,7 +294,7 @@
 						<div class="share-b">
 							<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
 							<script src="//yastatic.net/share2/share.js"></script>
-							<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,twitter,whatsapp,telegram" data-image="../img/maind-img.jpg"></div>
+							<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,twitter,whatsapp,telegram" data-image="../img/share-3.png.jpg"></div>
 						</div>
 					</div>
 				</div>
@@ -406,10 +408,24 @@
 
 	<!-- end modals -->
 
+	<!-- top -->
+
+	<!-- end top -->
+
+	<!-- scripts -->
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.nicescroll.min.js"></script>
 	<script src="js/wow.min.js"></script>
+	<script>
+		$(function() {
+			$('a[href*=#]').on('click', function(e) {
+				e.preventDefault();
+				$('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top}, 500, 'linear');
+			});
+		});
+	</script>
 	<script>
 		new WOW().init();
 	</script>
@@ -431,25 +447,6 @@
 	  $("#phone-1").mask("+7(999) 999-9999");
 	});
 	</script>
-	<script type="text/javascript">
-		 
-		$(document).ready(function(){
-			$("#top-nav, #bot-nav").on("click","a", function (event) {
-				//отменяем стандартную обработку нажатия по ссылке
-				event.preventDefault();
-
-				//забираем идентификатор бока с атрибута href
-				var id  = $(this).attr('href'),
-
-				//узнаем высоту от начала страницы до блока на который ссылается якорь
-					top = $(id).offset().top;
-				
-				//анимируем переход на расстояние - top за 1500 мс
-				$('body,html').animate({scrollTop: top}, 500);
-			});
-		});
-
-	</script>
 	<script>
 	$('#myModalvideo').on('hidden.bs.modal', function () {
 	  $('iframe[src*="https://www.youtube.com/"]').attr('src', $('iframe').attr('src'));
@@ -457,5 +454,115 @@
 	</script>
 	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/animate.css">
+	<script>
+		window.top = {};
+		var sc = window.top;
+
+		sc.time = 12; // время прокручивания
+
+		sc.goTop = function (time, acceleration) {
+			acceleration = acceleration || 0.1;
+			time = time || sc.time;
+
+			var dx = 0;
+			var dy = 0;
+			var bx = 0;
+			var by = 0;
+			var wx = 0;
+			var wy = 0;
+
+			if (document.documentElement) {
+				dx = document.documentElement.scrollLeft || 0;
+				dy = document.documentElement.scrollTop || 0;
+			}
+			if (document.body) {
+				bx = document.body.scrollLeft || 0;
+				by = document.body.scrollTop || 0;
+			}
+			var wx = window.scrollX || 0;
+			var wy = window.scrollY || 0;
+
+			var x = Math.max(wx, Math.max(bx, dx));
+			var y = Math.max(wy, Math.max(by, dy));
+
+			var speed = 1 + acceleration;
+			window.scrollTo(Math.floor(x / speed), Math.floor(y / speed));
+			if(x > 0 || y > 0) {
+				var invokeFunction = "window.top.goTop("+ time +")"
+				window.setTimeout(invokeFunction, time);
+			}
+			return false;
+		}
+
+		sc.showHide = function (){
+			var a = document.getElementById('gotop');
+
+			if( ! a ){
+				// если нет элемента добавляем его
+				var a = document.createElement('a');
+				a.id = "gotop";
+				a.className = "scrollTop";
+				a.href = "#";
+				a.style.display = "none";
+				a.style.position = "fixed";
+				a.style.zIndex = "9999";
+				a.onclick = function(e){ e.preventDefault(); window.top.goTop(); }
+				document.body.appendChild(a);
+			}
+
+			var stop = (document.body.scrollTop || document.documentElement.scrollTop);
+			if( stop > 300 ){
+				a.style.display = 'block';
+				sc.smoothopaque(a, 'show', 30, false);
+			} else {
+				sc.smoothopaque(a, 'hide', 30, function(){a.style.display = 'none';});
+			}
+
+			return false;
+		}
+
+		// Плавная смена прозрачности
+		sc.smoothopaque = function (el, todo, speed, endFunc){
+			var 
+			startop = Math.round( el.style.opacity * 100 ),
+			op = startop,
+			endop = (todo == 'show') ? 100 : 0;
+
+			clearTimeout( window['top'].timeout );
+
+			window['top'].timeout = setTimeout(slowopacity, 20);
+
+			function slowopacity(){
+				if( startop < endop ){
+					op += 5;
+					if( op < endop )
+						window['top'].timeout = setTimeout(slowopacity, speed);
+					else
+						(endFunc) && endFunc();
+				}
+				else {
+					op -= 5;
+					if( op > endop ){
+						window['top'].timeout = setTimeout(slowopacity, speed);
+					}
+					else
+						(endFunc) && endFunc();
+				}
+
+				// установка opacity
+				el.style.opacity = (op/100);
+				el.style.filter = 'alpha(opacity=' + op + ')';
+			}
+		}
+
+		if (window.addEventListener){
+			window.addEventListener("scroll", sc.showHide, false);
+			window.addEventListener("load", sc.showHide, false);
+		}
+		else if (window.attachEvent){
+			window.attachEvent("onscroll", sc.showHide);
+			window.attachEvent("onload", sc.showHide);
+		}
+	</script>
 </body>
 </html>
