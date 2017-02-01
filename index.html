@@ -2,132 +2,119 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<title>Проект ИГРА Екатеринбург</title>
+	<script src="js/analytics.js">
+	</script>
 	<style>
-	.overlay-preloader {
-		width: 100%;
-		position: fixed;
-		top: 0;
-		left: 0;
-		height: 100vh;
-		background: #101113;
-		z-index: 1;
-	}
-	.preloader3 {
-			z-index: 9;
-			position: fixed;
-			color:#e5151c;
-			top:50%;
-			left: 50%;
-			margin-left: -25px;
-			-webkit-transform: translateY(-25px);
-			-ms-transform: translateY(-25px);
-			-o-transform: translateY(-25px);
-			transform: translateY(-25px);
-		   width:35px;
-		   height:35px;
-		   display:inline-block;
-		   padding:0px;
-		   border-radius:100%;
-		   border:2px solid;
-		   border-top-color:rgba(255,0,0, 0.65);
-		   border-bottom-color:rgba(255,0,0, 0.65);
-		   border-left-color:rgba(0,0,0, 0.15);
-		   border-right-color:rgba(0,0,0, 0.15);
-		   -webkit-animation: preloader3 0.8s ease-in-out infinite alternate;
-		   animation: preloader3 0.8s ease-in-out infinite alternate;
-		}
-		@keyframes preloader3 {
-		   from {transform: rotate(0deg);}
-		   to {transform: rotate(360deg);}
-		}
-		@-webkit-keyframes preloader3 {
-		   from {-webkit-transform: rotate(0deg);}
-		   to {-webkit-transform: rotate(360deg);}
-		}
+	   .overlay-preloader {
+	       width: 100%;
+	       position: fixed;
+	       top: 0;
+	       left: 0;
+	       height: 100vh;
+	       background: #101113;
+	       z-index: 1;
+	   }
+	   .preloader3 {
+	           z-index: 9;
+	           position: fixed;
+	           color:#e5151c;
+	           top:50%;
+	           left: 50%;
+	           margin-left: -25px;
+	           -webkit-transform: translateY(-25px);
+	           -ms-transform: translateY(-25px);
+	           -o-transform: translateY(-25px);
+	           transform: translateY(-25px);
+	          width:35px;
+	          height:35px;
+	          display:inline-block;
+	          padding:0px;
+	          border-radius:100%;
+	          border:2px solid;
+	          border-top-color:rgba(255,0,0, 0.65);
+	          border-bottom-color:rgba(255,0,0, 0.65);
+	          border-left-color:rgba(0,0,0, 0.15);
+	          border-right-color:rgba(0,0,0, 0.15);
+	          -webkit-animation: preloader3 0.8s ease-in-out infinite alternate;
+	          animation: preloader3 0.8s ease-in-out infinite alternate;
+	       }
+	       @keyframes preloader3 {
+	          from {transform: rotate(0deg);}
+	          to {transform: rotate(360deg);}
+	       }
+	       @-webkit-keyframes preloader3 {
+	          from {-webkit-transform: rotate(0deg);}
+	          to {-webkit-transform: rotate(360deg);}
+	       }
 
 	</style>
-
-	<link rel="shortcut icon" href="../img/favicon.png" />
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/fonts.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/media.css">
+	<link href="../img/favicon.png" rel="shortcut icon">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/fonts.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/media.css" rel="stylesheet">
 </head>
 <body>
-<div class="preloader">
-	<div class="overlay-preloader"></div>
-	<div class="preloader3"></div>
-</div>
-
-<header class="wow fadeInDown" data-wow-delay="1s">
+	<div class="preloader">
+		<div class="overlay-preloader"></div>
+		<div class="preloader3"></div>
+	</div>
+	<header class="wow fadeInDown" data-wow-delay="1s">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-2 text-center">
-					<img src="img/logo.png" alt="Логотип Игра" class="img-responsiv">
-				</div>
+				<div class="col-sm-2 text-center"><img alt="Логотип Игра" class="img-responsiv" src="img/logo.png"></div>
 				<div class="col-sm-10">
-					<nav class="" id="top-nav" >
-						
-								<ul class="list-inline text-right">
-									<li>
-										<a href="#main">В&nbsp;начало</a>
-									</li>
-									<li>
-										<a href="#types">О&nbsp;ИГРЕ</a>
-									</li>
-									<li>
-										<a href="#rulers">Стоимость</a>
-									</li>
-									<li>
-										<a href="#faq">Вопросы</a>
-									</li>
-									<li>
-										<a href="#contacts">Контакты</a>
-									</li>
-								</ul>
+					<nav class="" id="top-nav">
+						<ul class="list-inline text-right">
+							<li>
+								<a href="#main">В&nbsp;начало</a>
+							</li>
+							<li>
+								<a href="#types">О&nbsp;ИГРЕ</a>
+							</li>
+							<li>
+								<a href="#rulers">Стоимость</a>
+							</li>
+							<li>
+								<a href="#faq">Вопросы</a>
+							</li>
+							<li>
+								<a href="#contacts">Контакты</a>
+							</li>
+						</ul>
 					</nav>
 				</div>
 			</div>
 		</div>
 	</header>
-
 	<section id="main">
 		<div class="container">
 			<div class="row text-center">
 				<h1 class="wow fadeInUp" data-wow-delay="1s">Проект ИГРА</h1>
-				<h2 class="wow fadeInUp" data-wow-delay="1s">Екатеринбург</h2>
-				<a class="wow fadeIn" data-wow-delay="2s" href="#types"><span></span></a>
+				<h2 class="wow fadeInUp" data-wow-delay="1s">Екатеринбург</h2><a class="wow fadeIn" data-wow-delay="2s" href="#types"><span></span></a>
 			</div>
 		</div>
-
 	</section>
-
 	<section id="types">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-offset-2 col-md-3">
 					<div class="read-more wow fadeInLeft" data-wow-delay="1s">
 						<h3>Футбол</h3>
-						<p class="white">Играем на&nbsp;улице, 1&nbsp;выходной, 2&nbsp;тайма по&nbsp;10&nbsp;минут, приз 10&nbsp;000&nbsp;₽.</p>
-						<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">+</button>
+						<p class="white">Играем на&nbsp;улице, 1&nbsp;выходной, 2&nbsp;тайма по&nbsp;10&nbsp;минут, приз 10&nbsp;000&nbsp;₽.</p><button class="btn btn-primary btn-lg" data-target="#myModal" data-toggle="modal">+</button>
 					</div>
 				</div>
-				<div class="col-md-5">
-					<img src="img/football-img.jpg" alt="Футбол" class="img-responsive center-block mg-left-45  wow fadeInRight" data-wow-delay="1s">
-				</div>
-			</div>			
+				<div class="col-md-5"><img alt="Футбол" class="img-responsive center-block mg-left-45 wow fadeInRight" data-wow-delay="1s" src="img/football-img.jpg"></div>
+			</div>
 			<div class="row">
-				<div class="col-md-offset-2 col-md-5">
-					<img src="img/race-img.jpg" alt="Гонки" class="img-responsive center-block  wow fadeInLeft">
-				</div>
+				<div class="col-md-offset-2 col-md-5"><img alt="Гонки" class="img-responsive center-block wow fadeInLeft" src="img/race-img.jpg"></div>
 				<div class="col-md-3">
-					<div class="read-more  wow fadeInRight">
+					<div class="read-more wow fadeInRight">
 						<h3>Гонки</h3>
-						<p class="white">Бежим дистанцию с&nbsp;надувными горками, лыжами, торпедами, колёсами и&nbsp;барьерами, 1&nbsp;выходной, приз 10&nbsp;000&nbsp;₽.</p>
-						<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">+</button>
+						<p class="white">Бежим дистанцию с&nbsp;надувными горками, лыжами, торпедами, колёсами и&nbsp;барьерами, 1&nbsp;выходной, приз 10&nbsp;000&nbsp;₽.</p><button class="btn btn-primary btn-lg" data-target="#myModal" data-toggle="modal">+</button>
 					</div>
 				</div>
 			</div>
@@ -135,24 +122,17 @@
 				<div class="col-md-offset-2 col-md-3">
 					<div class="read-more wow fadeInLeft">
 						<h3>Разум</h3>
-						<p class="white">Интеллектуальный вечер в&nbsp;приятной компании, вопросы на&nbsp;логику, базовую эрудицию и&nbsp;последние новости, приз 10&nbsp;000&nbsp;₽.</p>
-						<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">+</button>
+						<p class="white">Интеллектуальный вечер в&nbsp;приятной компании, вопросы на&nbsp;логику, базовую эрудицию и&nbsp;последние новости, приз 10&nbsp;000&nbsp;₽.</p><button class="btn btn-primary btn-lg" data-target="#myModal" data-toggle="modal">+</button>
 					</div>
 				</div>
-				<div class="col-md-5">
-					<img src="img/maind-img.jpg" alt="Разум" class="img-responsive center-block mg-left-45  wow fadeInRight">
-				</div>
-			</div>		
-
+				<div class="col-md-5"><img alt="Разум" class="img-responsive center-block mg-left-45 wow fadeInRight" src="img/maind-img.jpg"></div>
+			</div>
 		</div>
 	</section>
-
-	<section id="rulers" >
+	<section id="rulers">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-5 col-md-offset-1">
-					<img src="img/game-rulers.png" alt="Проект ИГРА" class="img-responsive center-block">
-				</div>
+				<div class="col-md-5 col-md-offset-1"><img alt="Проект ИГРА" class="img-responsive center-block" src="img/game-rulers.png"></div>
 				<div class="col-md-5">
 					<ul>
 						<li class="wow fadeInRight" data-wow-delay="0.5s">
@@ -176,12 +156,11 @@
 			</div>
 			<div class="row text-center wow fadeInUp">
 				<div class="col-md-12 text-center">
-					<button class="btn btn-primary btn-lg more" data-toggle="modal" data-target="#myModal">Заполнить заявку</button>
+					<button class="btn btn-primary btn-lg more" data-target="#myModal" data-toggle="modal">Заполнить заявку</button>
 				</div>
 			</div>
 		</div>
 	</section>
-
 	<section id="about-game">
 		<div class="container">
 			<div class="row">
@@ -193,36 +172,25 @@
 				</div>
 				<div class="col-md-4">
 					<div class="slider">
-						<div class="fotorama" data-width="100%" data-nav="false" data-loop="true" data-autoplay="3000"  data-arrows="true" data-click="true" data-swipe="true">
-							<img src="img/01.jpg" alt="">
-							<img src="img/02.jpg" alt="">
-							<img src="img/03.jpg" alt="">
-							<img src="img/04.jpg" alt="">
-							<img src="img/05.jpg" alt="">
-							<img src="img/06.jpg" alt="">
-							<img src="img/07.jpg" alt="">
-						</div>
+						<div class="fotorama" data-arrows="true" data-autoplay="3000" data-click="true" data-loop="true" data-nav="false" data-swipe="true" data-width="100%"><img alt="" src="img/01.jpg"> <img alt="" src="img/02.jpg"> <img alt="" src="img/03.jpg"> <img alt="" src="img/04.jpg"> <img alt="" src="img/05.jpg"> <img alt="" src="img/06.jpg"> <img alt="" src="img/07.jpg"></div>
 					</div>
 				</div>
 				<div class="col-md-4">
 					<div class="cta-block-2">
-						<img src="img/cta-img-2.jpg" alt="">
-						<button class="btn btn-primary btn-lg more" data-toggle="modal" data-target="#myModal">Участвовать</button>
+						<img alt="" src="img/cta-img-2.jpg"> <button class="btn btn-primary btn-lg more" data-target="#myModal" data-toggle="modal">Участвовать</button>
 					</div>
-					
 				</div>
 			</div>
 			<div class="row text-center">
 				<div class="col-md-12">
 					<div class="cta-block-3">
-						<button class="btn btn-primary btn-lg more" data-toggle="modal" data-target="#myModalvideo">Как это будет</button>
+						<button class="btn btn-primary btn-lg more" data-target="#myModalvideo" data-toggle="modal">Как это будет</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-
-	<section id="faq"  class="wow fadeInUp" data-wow-delay="0.5s">
+	<section class="wow fadeInUp" data-wow-delay="0.5s" id="faq">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 col-md-offset-2">
@@ -248,14 +216,10 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-md-4">
-					<img class="faq-img-1" src="img/faq-img-1.jpg" alt="">
-				</div>
+				<div class="col-md-4"><img alt="" class="faq-img-1" src="img/faq-img-1.jpg"></div>
 			</div>
 			<div class="row">
-				<div class="col-md-4 col-md-offset-2">
-					<img src="img/faq-img-2.jpg" alt="">
-				</div>
+				<div class="col-md-4 col-md-offset-2"><img alt="" src="img/faq-img-2.jpg"></div>
 				<div class="col-md-4">
 					<div class="read-more white-bg">
 						<h3>Ваши вопросы</h3>
@@ -274,359 +238,360 @@
 			</div>
 		</div>
 	</section>
-
 	<section id="reveiws">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
 					<div class="slider">
-						<div class="fotorama" data-width="100%" data-height="600" data-loop="true" data-autoplay="6000" data-arrows="true" data-click="true" data-swipe="true">
+						<div class="fotorama" data-arrows="true" data-autoplay="6000" data-click="true" data-height="600" data-loop="true" data-swipe="true" data-width="100%">
 							<div class="rev-shirt" data-img="img/rev-1.jpg">
 								<div>
 									<h4>От&nbsp;лица всей команды &laquo;Креатив&raquo;</h4>
-									<p>Спасибо за&nbsp;проект, ребята! Все было на&nbsp;высшем уровне, на&nbsp;протяжение всего сезона получили огромное количество эмоций!) 
-									</p>
+									<p>Спасибо за&nbsp;проект, ребята! Все было на&nbsp;высшем уровне, на&nbsp;протяжение всего сезона получили огромное количество эмоций!)</p>
 								</div>
 							</div>
 							<div class="rev-shirt" data-img="img/rev-2.jpg">
 								<div>
 									<h4>Оля Кузнецова</h4>
-									<p>Cпасибо большое организаторам, участникам других команд, в&nbsp;общем всему Проекту ИГРА! Это было незабываемо! 
-									</p>
+									<p>Cпасибо большое организаторам, участникам других команд, в&nbsp;общем всему Проекту ИГРА! Это было незабываемо!</p>
 								</div>
 							</div>
 							<div class="rev-shirt" data-img="img/rev-3.jpg">
 								<div>
 									<h4>Кирилл Киреев</h4>
-									<p>Отличное мероприятие! Динамично, Весело, Круто! 
-									Огромное спасибо команде организаторов Проекта ИГРА
-									</p>
+									<p>Отличное мероприятие! Динамично, Весело, Круто! Огромное спасибо команде организаторов Проекта ИГРА</p>
 								</div>
 							</div>
 							<div class="rev-shirt" data-img="img/rev-4.jpg">
 								<div>
 									<h4>Александр Старков</h4>
-									<p>Спасибо организаторам за&nbsp;такое соревнование!! 
-									Масштаб и&nbsp;правда высок! Напряжение и&nbsp;эмоции прям зашкаливали)) 
-									</p>
+									<p>Спасибо организаторам за&nbsp;такое соревнование!! Масштаб и&nbsp;правда высок! Напряжение и&nbsp;эмоции прям зашкаливали))</p>
 								</div>
 							</div>
 							<div class="rev-shirt" data-img="img/rev-5.jpg">
 								<div>
 									<h4>Stasya Demy</h4>
-									<p>Спасибо организаторам за&nbsp;такое крутое мероприятие! Нереальные эмоции =)
-									</p>
+									<p>Спасибо организаторам за&nbsp;такое крутое мероприятие! Нереальные эмоции =)</p>
 								</div>
 							</div>
 							<div class="rev-shirt" data-img="img/rev-6.jpg">
 								<div>
 									<h4>Анастасия Новикова</h4>
-									<p>Мы&nbsp;4-ые из&nbsp;32&nbsp;двух команд, по-моему это неплохо спасибо моей команде, вы&nbsp;мега-супер крутые!!! Давно так не&nbsp;играла и&nbsp;не&nbsp;испытывала такие эмоции)))
-									</p>
+									<p>Мы&nbsp;4-ые из&nbsp;32&nbsp;двух команд, по-моему это неплохо спасибо моей команде, вы&nbsp;мега-супер крутые!!! Давно так не&nbsp;играла и&nbsp;не&nbsp;испытывала такие эмоции)))</p>
 								</div>
 							</div>
-					</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section id="share"  class="wow fadeInUp" data-wow-delay="0.5s">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-8 col-md-offset-2">
-					<div class="share-block">
-						<h2>
-							Я&nbsp;участвую<br>в&nbsp;проекте <span class="red">ИГРА</span>
-						</h2>
-						<div class="share-b">
-							<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
-							<script src="//yastatic.net/share2/share.js"></script>
-							<div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,twitter,whatsapp,telegram" data-image="../img/share-3.png.jpg"></div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-
+	<section class="wow fadeInUp" data-wow-delay="0.5s" id="share">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-md-offset-2">
+					<div class="share-block">
+						<h2>Я&nbsp;участвую<br>
+						в&nbsp;проекте <span class="red">ИГРА</span></h2>
+						<div class="share-b">
+							<script src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js">
+							</script> 
+							<script src="//yastatic.net/share2/share.js">
+							</script>
+							<div class="ya-share2" data-image="../img/share-3.png.jpg" data-services="vkontakte,facebook,odnoklassniki,twitter,whatsapp,telegram"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<footer id="contacts">
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-3 game-f">
-					<img src="img/logo.png" alt="Логотип Игра" class="img-responsiv">
-					<p>Проект ИГРА Екатеринбург<br>ГУК-309, ул. Мира, 19 <a href="https://yandex.ru/maps/?um=constructor%3AxK3wW4J0aLQDC-sM-Xg0DrtOgli2353J&source=constructorLink" target="_blank"><i class="fa fa-map-marker" aria-hidden="true"></i></a><br>&copy;&nbsp;2013-2017</p>
+					<img alt="Логотип Игра" class="img-responsiv" src="img/logo.png">
+					<p>Проект ИГРА Екатеринбург<br>
+					ГУК-309, ул. Мира, 19 <a href="https://yandex.ru/maps/?um=constructor%3AxK3wW4J0aLQDC-sM-Xg0DrtOgli2353J&source=constructorLink" target="_blank"><i aria-hidden="true" class="fa fa-map-marker"></i></a><br>
+					&copy;&nbsp;2013-2017</p>
 				</div>
 				<div class="col-sm-9">
 					<nav id="bot-nav">
-								<ul class="list-inline text-right">
-									<li>
-										<a href="#main">В&nbsp;начало</a>
-									</li>	
-									<li>
-										<a href="#types">О&nbsp;ИГРЕ</a>
-									</li>
-									<li>
-										<a href="#rulers">Стоимость</a>
-									</li>
-									<li>
-										<a href="#faq">Вопросы</a>
-									</li>
-									<li>
-										<a href="#contacts">Контакты</a>
-									</li>
-								</ul>
+						<ul class="list-inline text-right">
+							<li>
+								<a href="#main">В&nbsp;начало</a>
+							</li>
+							<li>
+								<a href="#types">О&nbsp;ИГРЕ</a>
+							</li>
+							<li>
+								<a href="#rulers">Стоимость</a>
+							</li>
+							<li>
+								<a href="#faq">Вопросы</a>
+							</li>
+							<li>
+								<a href="#contacts">Контакты</a>
+							</li>
+						</ul>
 					</nav>
 				</div>
 			</div>
-			
 			<div class="row">
-					<ul class="list-inline">
-						<li><a href="
-						https://vk.com/projectgame_ekb" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
-						<li><a href="https://www.instagram.com/game_ekb/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-						<li><a href="http://facebook.com/game.ekb" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-						<li><a href="https://ok.ru/group/53484762300510" target="_blank"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a></li>
-					</ul>
+				<ul class="list-inline">
+					<li>
+						<a href="https://vk.com/projectgame_ekb" target="_blank"><i aria-hidden="true" class="fa fa-vk"></i></a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/game_ekb/" target="_blank"><i aria-hidden="true" class="fa fa-instagram"></i></a>
+					</li>
+					<li>
+						<a href="http://facebook.com/game.ekb" target="_blank"><i aria-hidden="true" class="fa fa-facebook"></i></a>
+					</li>
+					<li>
+						<a href="https://ok.ru/group/53484762300510" target="_blank"><i aria-hidden="true" class="fa fa-odnoklassniki"></i></a>
+					</li>
+				</ul>
 			</div>
-
 			<div class="row">
 				<a class="tel-game" href="tel:+73433467902">346-79-02</a>
 			</div>
 		</div>
-	</footer>
-	<!-- modals -->
-
-	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	  <div class="modal-dialog modal-md">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	      </div>
-	      <div class="modal-body text-center">
-	      	<div class="row">
-	      		<div class="header_modal">
-	      			<h4>Чтобы зарегистрироваться,<br>оставь свои данные</h4>
-	      		</div>
-	      	</div>
-	      	<div class="row">
-				<form action="send.php" method="post">
-				<input type="hidden" name="what" value="Интерес участия">
-					<div class="col-xs-12">
-						<input name="name" type="text" required placeholder="ФИО капитана команды" class="form-control form-input">
+	</footer><!-- modals -->
+	<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="myModal" role="dialog" tabindex="-1">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+				</div>
+				<div class="modal-body text-center">
+					<div class="row">
+						<div class="header_modal">
+							<h4>Чтобы зарегистрироваться,<br>
+							оставь свои данные</h4>
+						</div>
 					</div>
-					<div class="col-xs-12">
-						<input name="title" type="text" required placeholder="Название команды" class="form-control form-input">
+					<div class="row">
+						<form action="send.php" method="post">
+							<input name="what" type="hidden" value="Интерес участия">
+							<div class="col-xs-12">
+								<input class="form-control form-input" name="name" placeholder="ФИО капитана команды" required="" type="text">
+							</div>
+							<div class="col-xs-12">
+								<input class="form-control form-input" name="title" placeholder="Название команды" required="" type="text">
+							</div>
+							<div class="col-xs-12">
+								<input class="form-control form-input" id="phone-1" name="phone" placeholder="Телефон" required="" type="phone">
+							</div>
+							<div class="col-xs-12">
+								<input class="form-control form-input" name="mail" placeholder="Почта" required="" type="phone">
+							</div>
+							<div class="col-xs-12">
+								<textarea cols="30" name="question" placeholder="Ваш вопрос" rows="3"></textarea>
+							</div>
+							<div class="col-xs-12">
+								<button type="submit">Отправить</button>
+							</div>
+						</form>
 					</div>
-					<div class="col-xs-12">
-						<input name="phone" id="phone-1" type="phone" required placeholder="Телефон" class="form-control form-input">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div aria-hidden="true" aria-labelledby="myModalLabel" class="modal fade" id="myModalvideo" role="dialog" tabindex="-1">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button aria-hidden="true" class="close" data-dismiss="modal" type="button">&times;</button>
+				</div>
+				<div class="modal-body text-center">
+					<div class="row">
+						<iframe allowfullscreen frameborder="0" height="315" src="https://www.youtube.com/embed/Z9XGI-88ZKc?rel=0&amp;showinfo=0" width="560"></iframe>
 					</div>
-					<div class="col-xs-12">
-						<input name="mail" type="phone" required placeholder="Почта" class="form-control form-input">
-					</div>
-					<div class="col-xs-12">
-						<textarea name="question" placeholder="Ваш вопрос" id="" cols="30" rows="3"></textarea>
-					</div>
-					<div class="col-xs-12">
-						<button type="submit">
-							Отправить
-						</button>
-					</div>
-				</form>
-	      		</div>
-	      	</div>
-	      </div>
-	    </div>
-	  </div>
-
-	  <div class="modal fade" id="myModalvideo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-	    <div class="modal-dialog modal-md">
-	      <div class="modal-content">
-	        <div class="modal-header">
-	          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-	        </div>
-	        <div class="modal-body text-center">
-	        	<div class="row">
-	        		<iframe width="560" height="315" src="https://www.youtube.com/embed/Z9XGI-88ZKc?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-	        	</div>
-	        </div>
-	      </div>
-	    </div>
-	  </div>
-
-	<!-- end modals -->
-
+				</div>
+			</div>
+		</div>
+	</div><!-- end modals -->
 	<!-- top -->
-
 	<!-- end top -->
-
 	<!-- scripts -->
-	
 	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/wow.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
+	</script> 
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+	</script> 
+	<script src="js/bootstrap.min.js">
+	</script> 
+	<script src="js/wow.min.js">
+	</script> 
 	<script>
-		$(function() {
-			$('a[href*=#]').on('click', function(e) {
-				e.preventDefault();
-				$('html, body').animate({ scrollTop: $($(this).attr('href')).	offset().top}, 500, 'linear');	
-			});	
-		});
-	</script>
+	       $(function() {
+	           $('a[href*=#]').on('click', function(e) {
+	               e.preventDefault();
+	               $('html, body').animate({ scrollTop: $($(this).attr('href')).   offset().top}, 500, 'linear');  
+	           }); 
+	       });
+	</script> 
+	<script type="text/javascript">
+	   $(document).ready(function(){
+	       $("#myModal").submit(function() { //устанавливаем событие отправки для формы с id=form
+	               var form_data = $(this).serialize(); //собераем все данные из формы
+	               $.ajax({
+	               type: "POST", //Метод отправки
+	               url: "send.php", //путь до php файла отправителя
+	               data: form_data,
+	               success: function() {
+	                      //код в этом блоке выполняется при успешной отправке сообщения
+	                      alert("Ваше сообщение отпрвлено!");
+	               });
+	       });
+	   });    
+	</script> 
 	<script>
-		new WOW().init();
-	</script>
-	<script>
-		$(document).ready(
-			function() {
-				$("html").niceScroll({cursorcolor:"#000"});
-			}
-		);
-	</script>
-
+	       new WOW().init();
+	</script> <!--    <script>
+    $(document).ready(
+        function() {
+            $("html").niceScroll({cursorcolor:"#000"});
+        }
+    );
+</script> -->
 	<link href="css/fotorama.css" rel="stylesheet">
-	<script src="js/fotorama.js"></script>
-	<script src="js/jquery.maskedinput.min.js"></script>
-
+	<script src="js/fotorama.js">
+	</script> 
+	<script src="js/jquery.maskedinput.min.js">
+	</script> 
 	<script>
-	//Код jQuery, установливающий маску для ввода телефона элементу input
-	//1. После загрузки страницы,  когда все элементы будут доступны выполнить...
-	$(function(){
-	  //2. Получить элемент, к которому необходимо добавить маску
-	  $("#phone-1").mask("+7(999) 999-9999");
-	});
+	   //Код jQuery, установливающий маску для ввода телефона элементу input
+	   //1. После загрузки страницы,  когда все элементы будут доступны выполнить...
+	   $(function(){
+	     //2. Получить элемент, к которому необходимо добавить маску
+	     $("#phone-1").mask("+7(999) 999-9999");
+	   });
+	</script> 
+	<script>
+	   $('#myModalvideo').on('hidden.bs.modal', function () {
+	     $('iframe[src*="https://www.youtube.com/"]').attr('src', $('iframe').attr('src'));
+	   });
 	</script>
+	<link href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/animate.css" rel="stylesheet">
 	<script>
-	$('#myModalvideo').on('hidden.bs.modal', function () {
-	  $('iframe[src*="https://www.youtube.com/"]').attr('src', $('iframe').attr('src'));
-	});
-	</script>
-
-	<link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/animate.css">
-
+	   $(window).on('load', function () {
+	       var $preloader = $('.preloader'),
+	           $spinner   = $preloader.find('.preloader3');
+	       $spinner.fadeOut();
+	       $preloader.delay(1).fadeOut('slow');
+	   });
+	</script> 
 	<script>
-	$(window).on('load', function () {
-	    var $preloader = $('.preloader'),
-	        $spinner   = $preloader.find('.preloader3');
-	    $spinner.fadeOut();
-	    $preloader.delay(1).fadeOut('slow');
-	});
-	</script>
+	   window.top = {};
+	   var sc = window.top;
 
-	<script>
-	window.top = {};
-	var sc = window.top;
+	   sc.time = 12; // время прокручивания
 
-	sc.time = 12; // время прокручивания
+	   sc.goTop = function (time, acceleration) {
+	       acceleration = acceleration || 0.1;
+	       time = time || sc.time;
 
-	sc.goTop = function (time, acceleration) {
-		acceleration = acceleration || 0.1;
-		time = time || sc.time;
+	       var dx = 0;
+	       var dy = 0;
+	       var bx = 0;
+	       var by = 0;
+	       var wx = 0;
+	       var wy = 0;
 
-		var dx = 0;
-		var dy = 0;
-		var bx = 0;
-		var by = 0;
-		var wx = 0;
-		var wy = 0;
+	       if (document.documentElement) {
+	           dx = document.documentElement.scrollLeft || 0;
+	           dy = document.documentElement.scrollTop || 0;
+	       }
+	       if (document.body) {
+	           bx = document.body.scrollLeft || 0;
+	           by = document.body.scrollTop || 0;
+	       }
+	       var wx = window.scrollX || 0;
+	       var wy = window.scrollY || 0;
 
-		if (document.documentElement) {
-			dx = document.documentElement.scrollLeft || 0;
-			dy = document.documentElement.scrollTop || 0;
-		}
-		if (document.body) {
-			bx = document.body.scrollLeft || 0;
-			by = document.body.scrollTop || 0;
-		}
-		var wx = window.scrollX || 0;
-		var wy = window.scrollY || 0;
+	       var x = Math.max(wx, Math.max(bx, dx));
+	       var y = Math.max(wy, Math.max(by, dy));
 
-		var x = Math.max(wx, Math.max(bx, dx));
-		var y = Math.max(wy, Math.max(by, dy));
+	       var speed = 1 + acceleration;
+	       window.scrollTo(Math.floor(x / speed), Math.floor(y / speed));
+	       if(x > 0 || y > 0) {
+	           var invokeFunction = "window.top.goTop("+ time +")"
+	           window.setTimeout(invokeFunction, time);
+	       }
+	       return false;
+	   }
 
-		var speed = 1 + acceleration;
-		window.scrollTo(Math.floor(x / speed), Math.floor(y / speed));
-		if(x > 0 || y > 0) {
-			var invokeFunction = "window.top.goTop("+ time +")"
-			window.setTimeout(invokeFunction, time);
-		}
-		return false;
-	}
+	   sc.showHide = function (){
+	       var a = document.getElementById('gotop');
 
-	sc.showHide = function (){
-		var a = document.getElementById('gotop');
+	       if( ! a ){
+	           // если нет элемента добавляем его
+	           var a = document.createElement('a');
+	           a.id = "gotop";
+	           a.className = "scrollTop";
+	           a.href = "#";
+	           a.style.display = "none";
+	           a.style.position = "fixed";
+	           a.style.zIndex = "9999";
+	           a.onclick = function(e){ e.preventDefault(); window.top.goTop(); }
+	           document.body.appendChild(a);
+	       }
 
-		if( ! a ){
-			// если нет элемента добавляем его
-			var a = document.createElement('a');
-			a.id = "gotop";
-			a.className = "scrollTop";
-			a.href = "#";
-			a.style.display = "none";
-			a.style.position = "fixed";
-			a.style.zIndex = "9999";
-			a.onclick = function(e){ e.preventDefault(); window.top.goTop(); }
-			document.body.appendChild(a);
-		}
+	       var stop = (document.body.scrollTop || document.documentElement.scrollTop);
+	       if( stop > 300 ){
+	           a.style.display = 'block';
+	           sc.smoothopaque(a, 'show', 30, false);
+	       } else {
+	           sc.smoothopaque(a, 'hide', 30, function(){a.style.display = 'none';});
+	       }
 
-		var stop = (document.body.scrollTop || document.documentElement.scrollTop);
-		if( stop > 300 ){
-			a.style.display = 'block';
-			sc.smoothopaque(a, 'show', 30, false);
-		} else {
-			sc.smoothopaque(a, 'hide', 30, function(){a.style.display = 'none';});
-		}
+	       return false;
+	   }
 
-		return false;
-	}
+	   // Плавная смена прозрачности
+	   sc.smoothopaque = function (el, todo, speed, endFunc){
+	       var 
+	       startop = Math.round( el.style.opacity * 100 ),
+	       op = startop,
+	       endop = (todo == 'show') ? 100 : 0;
 
-	// Плавная смена прозрачности
-	sc.smoothopaque = function (el, todo, speed, endFunc){
-		var 
-		startop = Math.round( el.style.opacity * 100 ),
-		op = startop,
-		endop = (todo == 'show') ? 100 : 0;
+	       clearTimeout( window['top'].timeout );
 
-		clearTimeout( window['top'].timeout );
+	       window['top'].timeout = setTimeout(slowopacity, 20);
 
-		window['top'].timeout = setTimeout(slowopacity, 20);
+	       function slowopacity(){
+	           if( startop < endop ){
+	               op += 5;
+	               if( op < endop )
+	                   window['top'].timeout = setTimeout(slowopacity, speed);
+	               else
+	                   (endFunc) && endFunc();
+	           }
+	           else {
+	               op -= 5;
+	               if( op > endop ){
+	                   window['top'].timeout = setTimeout(slowopacity, speed);
+	               }
+	               else
+	                   (endFunc) && endFunc();
+	           }
 
-		function slowopacity(){
-			if( startop < endop ){
-				op += 5;
-				if( op < endop )
-					window['top'].timeout = setTimeout(slowopacity, speed);
-				else
-					(endFunc) && endFunc();
-			}
-			else {
-				op -= 5;
-				if( op > endop ){
-					window['top'].timeout = setTimeout(slowopacity, speed);
-				}
-				else
-					(endFunc) && endFunc();
-			}
+	           // установка opacity
+	           el.style.opacity = (op/100);
+	           el.style.filter = 'alpha(opacity=' + op + ')';
+	       }
+	   }
 
-			// установка opacity
-			el.style.opacity = (op/100);
-			el.style.filter = 'alpha(opacity=' + op + ')';
-		}
-	}
-
-	if (window.addEventListener){
-		window.addEventListener("scroll", sc.showHide, false);
-		window.addEventListener("load", sc.showHide, false);
-	}
-	else if (window.attachEvent){
-		window.attachEvent("onscroll", sc.showHide);
-		window.attachEvent("onload", sc.showHide);
-	}
+	   if (window.addEventListener){
+	       window.addEventListener("scroll", sc.showHide, false);
+	       window.addEventListener("load", sc.showHide, false);
+	   }
+	   else if (window.attachEvent){
+	       window.attachEvent("onscroll", sc.showHide);
+	       window.attachEvent("onload", sc.showHide);
+	   }
 	</script>
 </body>
 </html>

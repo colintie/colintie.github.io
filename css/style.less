@@ -594,7 +594,7 @@ button[type="submit"] {
 /*******конец Всплывающие окна********/
 
 /*******top********/
-.scrollTop{
+.scrollTop {
 	background: url(../img/gotop.png) no-repeat;
 	width: 100%;
 	height: 40px;
@@ -686,5 +686,49 @@ button[type="submit"] {
 
 /*******конец scroll********/
 
-/*******шапка********/
-/*******конец шапки********/
+/*******thx********/
+section#thx {
+	.thx {
+	margin-top: 10vh;
+    background-color: #1c1e21;
+    text-align: center;
+    padding: 20px 30px 35px;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    box-shadow: #000 0 0 50px;
+    border-radius: 2px;
+    text-transform: uppercase;
+    color: #bcc3cd;
+    position: relative;
+	&:after {
+		content: '';
+		position: absolute;
+		width: 100px;
+		height: 100px;
+		background-image: url(../img/rounds-pop.png);
+	    background-position: center center;
+	    background-repeat: no-repeat;
+		}
+	a {
+		font-size: 18px;
+		text-transform: uppercase;
+		background-color: #e5151c;
+		color: #fff;
+		border-radius: 30px;
+		border: none;
+		padding: 15px 40px;
+		margin: 25px auto;
+		&:hover {
+			box-shadow: #e5151c 0 0 50px;
+		}
+	}
+	h1 {
+		
+	}
+	p {
+		padding-bottom: 2em;
+	}
+	}
+}
+/*******конец thx********/
