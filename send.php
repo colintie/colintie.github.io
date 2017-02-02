@@ -1,7 +1,8 @@
 <?php 
 //принимаем постовые данные
+$what=$_POST['what'];
 $name=$_POST['name'];
-$tittle=$_POST['tittle'];
+$tittle=$_POST['title'];
 $phone=$_POST['phone'];
 $mail=$_POST['mail'];
 $question=$_POST['question'];
@@ -10,10 +11,10 @@ $question=$_POST['question'];
 $to = "clients@projectgame.org";
 //далее идет тема и само сообщение
 $subject = "Заявка с сайта ИГРЫ";
-$message = "
-Письмо отправлено из формы на сайте. <br />
+$message = "Письмо отправлено из формы на сайте ИГРА. <br />
+Форма с блока: ".htmlspecialchars($what)."<br />
 ФИО: ".htmlspecialchars($name)."<br />
-Название команды: ".htmlspecialchars($tittle)."<br />
+Название команды: ".htmlspecialchars($title)."<br />
 Почта: ".htmlspecialchars($mail)."<br />
 Вопрос: ".htmlspecialchars($question)."<br />
 Телефон: ".htmlspecialchars($phone);
