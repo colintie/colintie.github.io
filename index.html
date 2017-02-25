@@ -646,8 +646,12 @@
 	   });
 	</script> 
 	<script>
-	   $('#myModalvideo').on('hidden.bs.modal', function () {
+	   /*$('#myModalvideo').on('hidden.bs.modal', function () {
 	     $('iframe[src*="https://www.youtube.com/"]').attr('src', $('iframe').attr('src'));
+	   });*/
+	   $('.close').click(function () {
+	     $('#myModalvideo').hide();
+	     $('#myModalvideo iframe').attr("src", jQuery("#myModalvideo iframe").attr("src"));
 	   });
 	</script>
 	<link href="fonts/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
